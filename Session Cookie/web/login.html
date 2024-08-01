@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #6e8efb, #a777e3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            form {
+                background-color: white;
+                padding: 60px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 300px; /* Decreased width */
+                text-align: center;
+            }
+            h1 {
+                color: #333;
+                margin-bottom: 20px;
+            }
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                padding: 15px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            input[type="submit"] {
+                background: linear-gradient(90deg, #6e8efb, #a777e3);
+                color: white;
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+                margin: 20px 0;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background: linear-gradient(90deg, #a777e3, #6e8efb);
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        <form action="login.jsp" method="post"> 
+            <h1>Login</h1>
+            <input type="text" id="username" name="username" placeholder="Username" required> <br>
+            <input type="password" id="password" name="password" placeholder="Password" required> <br>
+            <input type="submit" value="LOGIN">
+           
+        </form>
+    </body>
+</html>
